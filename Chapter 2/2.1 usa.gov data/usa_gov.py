@@ -8,7 +8,8 @@ from collections import defaultdict
 from collections import Counter
 
 # path of the data file.
-path = 'e:/workspace/Python/Python_for_Data_Analysis/Chapter 2/2.1 usa.gov data/data/usagov_bitly_data2012-03-16-1331923249.txt'
+BASE_PATH = os.path.dirname(__file__)
+path = os.path.join(BASE_PATH, 'data\\usagov_bitly_data2012-03-16-1331923249.txt')
 if not os.path.exists(path):
     print('Error: no such file found in \"' + path + '\".')
     exit()
